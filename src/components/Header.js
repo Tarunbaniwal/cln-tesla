@@ -30,6 +30,7 @@ export default Header;
 
 const Wraper = style.div`
     margin:12px 8px 0 24px;
+    padding:4px 0;
     display:flex;
     justify-content:space-between;
     
