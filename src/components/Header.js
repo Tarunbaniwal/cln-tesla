@@ -48,7 +48,6 @@ const Wraper = style.div`
 `
 const Logo = style.div`
 
-    padding-left:16px;
     .logo > a{
       padding:0 8px 0 16px;
     }
