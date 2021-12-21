@@ -48,9 +48,6 @@ const Wraper = style.div`
 `
 const Logo = style.div`
 
-    .logo > a{
-      padding:0 8px 0 16px;
-    }
     a > img{
       width:120px;
       height:30px;
