@@ -47,7 +47,7 @@ const Wraper = style.div`
     }
 `
 const Logo = style.div`
-
+    
     a > img{
       width:120px;
       height:30px;
