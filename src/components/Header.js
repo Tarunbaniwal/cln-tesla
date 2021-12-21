@@ -29,25 +29,13 @@ function Header() {
 export default Header;
 
 const Wraper = style.div`
-    margin:0 32px;
-    padding:12px 0;
+    margin:12px 8px 0 24px;
     display:flex;
     justify-content:space-between;
-    font-size:14px;
-    color:#181b21;
-    background:#fff;
-    a{
-      padding:4px 8px;
-      text-decoration:none;
-      color:#181b21;
-      text-align:left;
-      line-height:21px;
-      font-weight:600;
-      
-    }
+    
 `
 const Logo = style.div`
-    
+
     a > img{
       width:120px;
       height:30px;
@@ -55,6 +43,16 @@ const Logo = style.div`
 `;
 const MiddleMenu = style.div`
     padding:8px 8px;
+    a{
+      padding:4px 8px;
+      text-decoration:none;
+      color:#181b21;
+      text-align:left;
+      line-height:21px;
+      font-weight:600;
+      font-size:14px;
+      color:#181b21;
+    }
     @media only screen and (max-width:1199px){
       display:none;
     }
@@ -64,10 +62,11 @@ const RightMenu = style.div`
       @media only screen and (max-width:1199px){
         display:none;
       }
-    }  
+    }
+    padding:4px 8px;  
     button{
       border:none;
-      padding:4px 8px;
+      padding:0px 8px;
       font-size:14px;
       background:transparent;
       font-weight:600;
