@@ -66,7 +66,7 @@ const Logo = style.div`
         height:30px;
     }
     @media only screen and (max-width:1199px){
-      padding-left: 24px;
+      padding-left: 8px;
       
     }
 
