@@ -10,17 +10,17 @@ function Header() {
         </a>
       </Logo>
       <MiddleMenu>
-        <a href="/#">Model S</a>
-        <a href="/#">Model X</a>
-        <a href="/#">Model 3</a>
-        <a href="/#">Model Y</a>
-        <a href="/#">Solar Roof</a>
-        <a href="/#">Solar Panels</a>
-      </MiddleMenu>
+        <a href="/#"><li>Model S</li></a>
+        <a href="/#"><li>Model 3</li></a>
+        <a href="/#"><li>Model X</li></a>
+        <a href="/#"><li>Model Y</li></a>
+        <a href="/#"><li>Solar Roof</li></a>
+        <a href="/#"><li>Solar Panels</li></a>
+      </MiddleMenu>     
       <RightMenu>
-        <a href="/#">Shop</a>
-        <a href="/#">Account</a>
-        <button>Menu</button>
+        <a href="/#"><li>Shop</li></a> 
+        <a href="/#"><li>Account</li></a>
+        <ul><button>Menu</button></ul>
       </RightMenu>
     </Wraper>
   );
@@ -29,49 +29,69 @@ function Header() {
 export default Header;
 
 const Wraper = style.div`
-    margin:12px 8px 0 24px;
-    padding:4px 0;
+    padding-top:12px;
     display:flex;
     justify-content:space-between;
     
-`
-const Logo = style.div`
+    li{
+        list-style-type:none;
+        margin:0 8px;
+        color:#181b21;
+        text-align:left;
+        font-size:15px;
+        line-height:21px;
+        font-weight:600;
+        cursor:pointer;
+        @media only screen and (max-width:1199px){
+          display:none;
+        }
+    }
 
-    a > img{
-      width:120px;
-      height:30px;
-    }
-`;
-const MiddleMenu = style.div`
-    padding:8px 8px;
     a{
-      padding:4px 8px;
-      text-decoration:none;
-      color:#181b21;
-      text-align:left;
-      line-height:21px;
-      font-weight:600;
-      font-size:14px;
-      color:#181b21;
-    }
-    @media only screen and (max-width:1199px){
-      display:none;
-    }
-`;
-const RightMenu = style.div`
-    a{
-      @media only screen and (max-width:1199px){
-        display:none;
-      }
-    }
-    padding:4px 8px;  
-    button{
-      border:none;
-      padding:0px 8px;
-      font-size:14px;
-      background:transparent;
-      font-weight:600;
+        text-decoration:none;
+        padding:4px 8px;
+        
     }
     
-`;
+`
+const Logo = style.div`
+    
+    padding-left:32px;
+    item-align:start;
+    a{
+        padding:0 8px 0 16px;
+    }
+    a > img{
+        width:120px;
+        height:30px;
+    }
 
+`
+const MiddleMenu = style.div`
+    padding:0 8px;
+    display:flex;
+    justify-content:space-between;
+
+`
+
+const RightMenu = style.div`
+    padding-right:32px;
+    display:flex;
+    justify-content:space-between;
+    ul{
+      padding:4px 8px;
+    }
+    button{
+      margin:0 8px;
+      border:none;
+      font-size:15px;
+      font-weight:600;
+      background:transparent;
+      cursor:pointer;
+    }
+    @media only screen and (max-width:1199px){
+      padding-right: 0;
+      
+    }
+
+`
