@@ -65,6 +65,10 @@ const Logo = style.div`
         width:120px;
         height:30px;
     }
+    @media only screen and (max-width:1199px){
+      padding-left: 24px;
+      
+    }
 
 `
 const MiddleMenu = style.div`
